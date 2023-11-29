@@ -51,7 +51,7 @@
                             <label for="idIda">Data da ida</label>
                             <input type="date" name="ida" id="idIda" min="2023-11-01">
                         </div>
-                        
+
                         <div class="menor">
                             <label for="idVolta">Data da Volta</label>
                             <input type="date" name="volta" id="idVolta" min="2023-11-01">
@@ -128,30 +128,34 @@
                         </div>
                     </div>
 
-                    <div class="form-div">
+                    <div class="form-radio">
                         <p>Quarto com cama infatil?</p>
 
-                        <input type="radio" name="quarto" id="idQuarto" value="sim">
-                        <label for="idQuarto">Sim</label>
-
-                        <input type="radio" name="quarto" id="idQuarto" value="nao">
-                        <label for="idQuarto">Não</label>
+                        <div>
+                            <label for="idQuarto">
+                                <input type="radio" name="quarto" id="idQuarto" value="sim">
+                                Sim
+                            </label>
+                            <label for="idQuarto">
+                                <input type="radio" name="quarto" id="idQuarto" value="nao">
+                                Não
+                            </label>
+                        </div>
                     </div>
 
-                    <div class="form-div">
+                    <div class="form-check">
                         <p>Preferência de hospedagem</p>
 
-                        <input type="checkbox" name="preferencia" id="idPiscina" value="piscina">
-                        <label for="idPiscina">Piscina</label>
-
-                        <input type="checkbox" name="preferencia" id="idWifi" value="wifi">
-                        <label for="idWifi">Wi-Fi</label>
-
-                        <input type="checkbox" name="preferencia" id="idGaragem" value="garagem">
-                        <label for="idGaragem">Garagem</label>
-
-                        <input type="checkbox" name="preferencia" id="idSuite" value="suite">
-                        <label for="idSuite">Suite</label>
+                        <div>
+                            <input type="checkbox" name="preferencia" id="idPiscina" value="piscina">
+                            <label for="idPiscina">Piscina</label>
+                            <input type="checkbox" name="preferencia" id="idWifi" value="wifi">
+                            <label for="idWifi">Wi-Fi</label>
+                            <input type="checkbox" name="preferencia" id="idGaragem" value="garagem">
+                            <label for="idGaragem">Garagem</label>
+                            <input type="checkbox" name="preferencia" id="idSuite" value="suite">
+                            <label for="idSuite">Suite</label>
+                        </div>
                     </div>
 
                     <button type="submit">Solicitar Orçamento</button>

@@ -50,6 +50,10 @@ header .container-base p {
 }
 
 /* Banner-formulario */
+input, select {
+    padding: 5px;
+}
+
 .banner-formulario {
     width: 100%;
     height: auto;
@@ -118,6 +122,43 @@ header .container-base p {
     width: 100%;
 }
 
-input, select {
-    padding: 5px;
+.banner-formulario .form-radio {
+    width: auto;
+    padding: 5px 20px;
+    margin-bottom: 5px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.banner-formulario .form-radio div {
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-formulario .form-check {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px;
+    margin-bottom: 5px;
+    gap: 10px;
+}
+
+.banner-formulario .form-check div{
+    display: flex;
+    gap: 5px;
+}
+
+.banner-formulario .form-check label{
+    margin-right: 15px;
+}
+
+button {
+    margin: 20px 20px;
+    padding: 5px 10px;
+    background-color: var(--roxo);
+    border: none;
+    color: white;
+    font-size: 17px;
 }
