@@ -8,6 +8,7 @@
     <meta name="keywords" content="Agencia, viagens, avião">
     <meta name="author" content="Robson Junior">
     <title>Projeto09 - Agencia de Viagens</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -21,8 +22,10 @@
     <main>
         <section class="banner-formulario">
             <div class="container-base">
-                <img src="assets/imagens/aviao.png" alt="icone avião">
-                <h1>Solicite um orçamento</h1>
+                <div class="titulo-form">
+                    <img src="assets/imagens/aviao.png" alt="icone avião">
+                    <h1>Solicite um orçamento</h1>
+                </div>
 
                 <h2>Informe seus dados</h2>
 
@@ -43,111 +46,119 @@
                         <input type="tel" name="fone" id="idFone" placeholder="(xx) xxxxx-xxxx">
                     </div>
 
-                    <div class="form-div form-div-menor">
-                        <label for="idIda">Data da ida</label>
-                        <input type="date" name="ida" id="idIda" min="2023-11-01">
+                    <div class="form-div-menor">
+                        <div class="menor">
+                            <label for="idIda">Data da ida</label>
+                            <input type="date" name="ida" id="idIda" min="2023-11-01">
+                        </div>
+
+                        <div class="menor">
+                            <label for="idVolta">Data da Volta</label>
+                            <input type="date" name="volta" id="idVolta" min="2023-11-01">
+                        </div>
+
+                        <div class="menor">
+                            <label for="idOrigem">Origem</label>
+                            <select name="origem" id="idOrigem">
+                                <option value="" selected disabled>Partindo de</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                                <option value="EX">Estrangeiro</option>
+                            </select>
+                        </div>
+
+                        <div class="menor">
+                            <label for="idOrigem">Destino</label>
+                            <select name="destino" id="idDestino">
+                                <option value="" selected disabled>Partindo de</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                                <option value="EX">Estrangeiro</option>
+                            </select>
+                        </div>
                     </div>
 
-                    <div class="form-div form-div-menor">
-                        <label for="idVolta">Data da Volta</label>
-                        <input type="date" name="volta" id="idVolta" min="2023-11-01">
-                    </div>
-
-                    <div class="form-div form-div-menor">
-                        <label for="idOrigem">Origem</label>
-                        <select name="origem" id="idOrigem">
-                            <option value="" selected disabled>Partindo de</option>
-                            <option value="AC">Acre</option>
-                            <option value="AL">Alagoas</option>
-                            <option value="AP">Amapá</option>
-                            <option value="AM">Amazonas</option>
-                            <option value="BA">Bahia</option>
-                            <option value="CE">Ceará</option>
-                            <option value="DF">Distrito Federal</option>
-                            <option value="ES">Espírito Santo</option>
-                            <option value="GO">Goiás</option>
-                            <option value="MA">Maranhão</option>
-                            <option value="MT">Mato Grosso</option>
-                            <option value="MS">Mato Grosso do Sul</option>
-                            <option value="MG">Minas Gerais</option>
-                            <option value="PA">Pará</option>
-                            <option value="PB">Paraíba</option>
-                            <option value="PR">Paraná</option>
-                            <option value="PE">Pernambuco</option>
-                            <option value="PI">Piauí</option>
-                            <option value="RJ">Rio de Janeiro</option>
-                            <option value="RN">Rio Grande do Norte</option>
-                            <option value="RS">Rio Grande do Sul</option>
-                            <option value="RO">Rondônia</option>
-                            <option value="RR">Roraima</option>
-                            <option value="SC">Santa Catarina</option>
-                            <option value="SP">São Paulo</option>
-                            <option value="SE">Sergipe</option>
-                            <option value="TO">Tocantins</option>
-                            <option value="EX">Estrangeiro</option>
-                        </select>
-                    </div>
-
-                    <div class="form-div form-div-menor">
-                        <label for="idOrigem">Destino</label>
-                        <select name="destino" id="idDestino">
-                            <option value="" selected disabled>Partindo de</option>
-                            <option value="AC">Acre</option>
-                            <option value="AL">Alagoas</option>
-                            <option value="AP">Amapá</option>
-                            <option value="AM">Amazonas</option>
-                            <option value="BA">Bahia</option>
-                            <option value="CE">Ceará</option>
-                            <option value="DF">Distrito Federal</option>
-                            <option value="ES">Espírito Santo</option>
-                            <option value="GO">Goiás</option>
-                            <option value="MA">Maranhão</option>
-                            <option value="MT">Mato Grosso</option>
-                            <option value="MS">Mato Grosso do Sul</option>
-                            <option value="MG">Minas Gerais</option>
-                            <option value="PA">Pará</option>
-                            <option value="PB">Paraíba</option>
-                            <option value="PR">Paraná</option>
-                            <option value="PE">Pernambuco</option>
-                            <option value="PI">Piauí</option>
-                            <option value="RJ">Rio de Janeiro</option>
-                            <option value="RN">Rio Grande do Norte</option>
-                            <option value="RS">Rio Grande do Sul</option>
-                            <option value="RO">Rondônia</option>
-                            <option value="RR">Roraima</option>
-                            <option value="SC">Santa Catarina</option>
-                            <option value="SP">São Paulo</option>
-                            <option value="SE">Sergipe</option>
-                            <option value="TO">Tocantins</option>
-                            <option value="EX">Estrangeiro</option>
-                        </select>
-                    </div>
-
-                    <div class="form-div">
+                    <div class="form-radio">
                         <p>Quarto com cama infatil?</p>
 
-                        <input type="radio" name="quarto" id="idQuarto" value="sim">
-                        <label for="idQuarto">Sim</label>
-
-                        <input type="radio" name="quarto" id="idQuarto" value="nao">
-                        <label for="idQuarto">Não</label>
+                        <div>
+                            <label for="idQuarto">
+                                <input type="radio" name="quarto" id="idQuarto" value="sim">
+                                Sim
+                            </label>
+                            <label for="idQuarto">
+                                <input type="radio" name="quarto" id="idQuarto" value="nao">
+                                Não
+                            </label>
+                        </div>
                     </div>
 
-                    <div class="form-div">
+                    <div class="form-check">
                         <p>Preferência de hospedagem</p>
 
-                        <input type="checkbox" name="preferencia" id="idPiscina" value="piscina">
-                        <label for="idPiscina">Piscina</label>
-
-                        <input type="checkbox" name="preferencia" id="idWifi" value="wifi">
-                        <label for="idWifi">Wi-Fi</label>
-
-                        <input type="checkbox" name="preferencia" id="idGaragem" value="garagem">
-                        <label for="idGaragem">Garagem</label>
-
-                        <input type="checkbox" name="preferencia" id="idSuite" value="suite">
-                        <label for="idSuite">Suite</label>
+                        <div>
+                            <input type="checkbox" name="preferencia" id="idPiscina" value="piscina">
+                            <label for="idPiscina">Piscina</label>
+                            <input type="checkbox" name="preferencia" id="idWifi" value="wifi">
+                            <label for="idWifi">Wi-Fi</label>
+                            <input type="checkbox" name="preferencia" id="idGaragem" value="garagem">
+                            <label for="idGaragem">Garagem</label>
+                            <input type="checkbox" name="preferencia" id="idSuite" value="suite">
+                            <label for="idSuite">Suite</label>
+                        </div>
                     </div>
+
+                    <button type="submit">Solicitar Orçamento</button>
                 </form>
             </div>
         </section>
@@ -158,36 +169,40 @@
 
                 <p>Com até 50% de desconto.</p>
 
-                <div class="galeria-imagem">
-                    <figure>
-                        <img src="assets/imagens/rio.jpg" alt="rio de janeiro">
+                <div class="galeria-img">
+                    <div class="img-grande">
+                        <figure>
+                            <img src="assets/imagens/rio.jpg" alt="rio de janeiro">
 
-                        <figcaption>Rio de Janeiro</figcaption>
-                    </figure>
+                            <figcaption>Rio de Janeiro</figcaption>
+                        </figure>
+                    </div>
 
-                    <figure>
-                        <img src="assets/imagens/manaus.jpg" alt="manaus">
+                    <div class="img-mini">
+                        <figure>
+                            <img src="assets/imagens/manaus.jpg" alt="manaus">
 
-                        <figcaption>Manaus</figcaption>
-                    </figure>
+                            <figcaption>Manaus</figcaption>
+                        </figure>
 
-                    <figure>
-                        <img src="assets/imagens/saopaulo.jpg" alt="saopaulo">
+                        <figure>
+                            <img src="assets/imagens/saopaulo.jpg" alt="saopaulo">
 
-                        <figcaption>São Paulo</figcaption>
-                    </figure>
+                            <figcaption>São Paulo</figcaption>
+                        </figure>
 
-                    <figure>
-                        <img src="assets/imagens/niteroi.jpg" alt="niteroi">
+                        <figure>
+                            <img src="assets/imagens/niteroi.jpg" alt="niteroi">
 
-                        <figcaption>Rio de Janeiro</figcaption>
-                    </figure>
+                            <figcaption>Rio de Janeiro</figcaption>
+                        </figure>
 
-                    <figure>
-                        <img src="assets/imagens/maranhao.jpg" alt="maranhão">
-
-                        <figcaption>Maranhão</figcaption>
-                    </figure>
+                        <figure>
+                            <img src="assets/imagens/maranhao.jpg" alt="maranhão">
+                            
+                            <figcaption>Maranhão</figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
         </section>
@@ -198,21 +213,25 @@
 
                 <p>Viaje conosco e veja o melhor que a natureza tem a oferecer.</p>
 
-                <div class="galeria-imagem">
-                    <div class="img-descricao">
-                        <img src="assets/imagens/lencol.jpg" alt="lencois maranhenses">
-
-                        <h4>Lençois Maranhenses, Brasil</h4>
-
-                        <p>Ida e volta a partir de R$79</p>
+                <div class="galeria-img">
+                    <div class="img-grande">
+                        <div class="anuncio-div">
+                            <img src="assets/imagens/lencol.jpg" alt="lencois maranhenses">
+                            <div>
+                                <h4>Lençois Maranhenses, Brasil</h4>
+                                <p>Ida e volta a partir de R$79</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <div>
-                        <img src="assets/imagens/goias.jpg" alt="cachoeira">
-
-                        <h4>Cachoeira Santa Bárbara, Brasil</h4>
-
-                        <p>Ida e volta por R$139</p>
+                    <div class="img-grande">
+                        <div class="anuncio-div">
+                            <img src="assets/imagens/goias.jpg" alt="cachoeira">
+                            <div>
+                                <h4>Cachoeira Santa Bárbara, Brasil</h4>
+                                <p>Ida e volta por R$139</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
